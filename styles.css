@@ -1,0 +1,705 @@
+/* ------------------------------THIS STYLING SECTION WILL APPLY TO ALL HTML PAGES------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+	background-color: #ffffff;
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ---------------header styling: logo and company name------------------- */
+header {
+    background-color: #E0E4AE; /* Set your desired background color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    width: 100px; /*  width for the round logo container */
+    height: 100px; /* height for the round logo container */
+    overflow: hidden;
+    border-radius: 50%; /* Creates a rounded shape */
+    margin-right: 10px; 
+}
+
+.logo {
+    width: 100%; /* Makes the logo fill the container */
+    height: auto; 
+    display: block;
+}
+
+.company_name {
+    font-size: 35px;
+    font-family: Garamond, serif;
+	color: #ffffff;
+	margin-left: -150px;
+	font-weight: bold;
+}
+
+/*--------------------------drop down menu styling ----------------------------*/
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+    font-size: 16px;
+    white-space: nowrap;
+    position: relative; /* positioning the dropdown */
+}
+
+nav ul li#basket {
+    font-size: 24px;
+    line-height: 15px;
+}
+
+nav ul li::after {  
+    content: "\007C";  /*Add seperator lines inbetween link items */
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+nav ul li#basket::after {
+    content: "";
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #d4a5a5;
+}
+
+nav ul ul {					/*Styling for the dropdown of candles from the product link item */
+    display: none;
+    position: absolute;
+    background-color: #e4e7b8;
+	padding-left: 15px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    text-align: left;
+    border-bottom: 2px solid #fff;
+}
+
+nav ul ul li::after {
+    content: "";  /* Remove seperator lines from nested link items */
+}
+
+nav ul ul li a {
+    color: #fff;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav ul ul li a:hover {
+    color: #d4a5a5;
+}
+
+nav ul ul li:last-child {
+    border-bottom: none;
+}
+
+/*----------------------------- footer styling --------------------------------- */
+footer {
+	margin-top: auto;
+    background-color: #E0E4AE;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 16px;
+	font-weight: bold;
+}
+/*---------------------------------------------THIS STYLING SECTION APPLIES TO THE HOMEPAGE------------------------------------------ */
+.banner-photo {
+	height: 280px;
+}
+
+.home-heading {
+	font-family: Garamond, serif;
+	text-align: center;
+	font-size: 40px;
+	color: #C7BE95;
+	padding: 30px;	
+}
+
+.home-heading a {
+	color: #C7BE95;
+}
+
+.popular-questions {
+	color: #707070;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 20px;
+}
+
+h2 a {
+	color: #C7BE95;
+}
+
+hr {
+	width: 100px;
+	height: 2px;
+	background-color: #707070;
+	margin-bottom: 10px;
+}
+/*---------------------------------------------THIS STYLING SECTION APPLIES TO THE LOGIN HTML PAGE----------------------------------- */
+
+/* Style for the login section */
+.login-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+/* Style for the login container */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #E0E4AE;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the login heading */
+.login-heading {
+    color: #C7BE95;
+    font-family: 'Garamond', serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the form groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Style for labels */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style for input fields */
+.login-form input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style for login buttons */
+.login-button {
+    background-color: #C7BE95;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #A69E77;
+}
+
+/* Style for switch form link */
+.switch-form-link {
+    color: #000000;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+	text-decoration: underline;
+}
+
+/* Style for switch form link on hover */
+.switch-form-link:hover {
+    font-weight: bold;
+}
+/*---------------------------------------------THIS STYLING SECTION APPLIES TO THE PRODUCTS HTML PAGE-------------------------------- */
+
+/* -------------------------- free shipping styling -----------------------*/ 
+h1 {
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	background-color: #d4a5a5;
+	margin: 0;
+	padding: 10px 10px;
+}
+
+/* ---------------------CANDLES heading styling----------------------------*/
+h2 {
+	font-family: Garamond, serif;
+	text-align: center;
+	font-size: 40px;
+	color: #C7BE95;
+}
+
+/*------------------------- Product display styling ------------------------- */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+	width: 35%;
+    margin: 20px;
+    text-align: center;
+	transition: filter 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.product:hover {
+    filter: brightness(80%); /* Darken the image when hovered on */
+}
+
+.product h2 {
+    font-family: 'Garamond', serif; /* Use a specific font family */
+    font-size: 24px; /* Set the font size */
+    margin-top: 10px; /* Add some top margin for spacing */
+    color: #C7BE95; /* Set the text color */
+}
+
+
+
+.product a {
+	text-decoration: none; /* Remove underline from links */
+    color: #C7BE95; /* Set the text color for links */
+}
+
+
+
+
+/*---------------------------------------------THIS STYLING SECTION APPLIES TO CANDLE DESCRIPTION PAGES-------------------------- */
+#candle-name {
+    display: flex;
+    border: 2px solid #E0E4AE;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+h3 {
+	font-family: Garamond, serif;
+	font-size: 40px;
+	color: #C7BE95;
+	padding-bottom: 20px;
+}
+
+.product_photo {
+    flex: 1;
+    text-align: center;
+}
+
+.product_image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product_details {
+    flex: 2;
+    padding: 20px;
+}
+
+.product_details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product_details p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.add-to-basket {
+    margin-top: 20px;
+}
+
+.add-to-basket h3 {
+    font-size: 18px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    width: 40px;
+    padding: 5px;
+}
+
+button {
+    background-color: #E0E4AE;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #C7BE95;
+}
+
+/*------------------------------------------- description of candle styling ----------------------------------*/
+#candle-description {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px; /* round edges*/
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-description {
+    font-size: 18px;
+	font-weight: bold;
+    line-height: 1.6;
+    color: #444444;
+    margin-bottom: 20px;
+}
+
+
+.features {
+    font-size: 22px;
+    font-weight: bold;
+    color: #C7BE95;
+    margin-bottom: 15px;
+}
+
+#candle-description ul {
+    list-style: circle;
+    padding: 0;
+    margin: 20px;
+}
+
+#candle-description ul li {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+.final-sentence {
+    font-size: 18px;
+    font-style: italic;
+    color: #777777;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+/*---------------------------------------------THIS STYLING SECTION APPLIES TO THE ABOUT US PAGE------------------------------------- */
+
+.about-details {
+    margin: 40px;
+}
+
+.about-details h2 {
+    font-family: 'Garamond', serif;
+    font-size: 30px;
+    color: #C7BE95;
+    text-align: center;
+}
+
+.about-details p {
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.about-hr{
+	width: 100px;
+	height: 2px;
+	background-color: #C7BE95;
+	color: #C7BE95;
+	margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 0 0 30%;
+    margin: 20px;
+    border: 2px solid #E0E4AE;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.column h4 {
+	text-align: center;
+}
+
+.column:hover {
+    transform: scale(1.05);
+}
+
+.team-picture {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #E0E4AE;
+}
+
+.column figcaption {
+    text-justify: inter-word;
+	width: 95%;
+    font-size: 18px;
+    color: #333333;
+    padding: 10px;
+}
+
+/*---------------------------------------------THIS STYLING SECTION APPLIES TO THE CONTACT US PAGE----------------------------------- */
+
+.container {
+	width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #E0E4AE;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-boxes {
+    margin-bottom: 20px;
+}
+
+.form-boxes label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-boxes input {
+    width: 800px; 
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px; 
+}
+
+button.form-submit {
+    background-color: #C7BE95;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px; 
+}
+
+button.form-submit:hover {
+    background-color: #A69E77;
+}
+
+
+/*---------------------------------------------THIS STYLING SECTION APPLIES TO THE SHOPPING BASKET PAGE------------------------------ */
+
+#basket-container {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#basket-items {
+    flex: 1;
+}
+
+#subtotal {
+    margin-top: 10px; /* Move to the right by pushing it to the end of the container */
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+#basket-actions {
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+#basket-actions button {
+	background-color: #d4a5a5;
+    color: #ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
+    border: 2px solid black;
+    padding: 20px 20px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+
+.view-products {
+	font-size: 35px;
+    font-family: Garamond, serif;
+	margin-right: 400px;
+}
+
+.basket-item {
+    border: 4px solid #E0E4AE;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.basket-item button {
+    background-color: #E0E4AE;
+	text-transform: uppercase; 
+    color: #000000;
+    border: 2px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+    
+}
+
+.basket-item button:hover {
+    background-color: #C7BE95;
+}
+
+.basket-actions button {
+	
+}
+
+
+/*---------------------------------------------THIS STYLING SECTION APPLIES TO THE CHECKOUT PAGE------------------------------ */
+     
+main {
+    justify-content: center; 
+}
+
+#checkout-container {
+    width: 1200px;
+    margin: 20px auto; /* Center the container */
+}
+
+#checkout-summary {
+    background-color: #F5F5F5; /* Set a white background for the order summary */
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#checkout-summary h3 {
+    color: #333333; /* Order Summary heading colour */
+}
+
+#checkout-summary ul {
+    list-style: circle; /*make the bullet points round */
+    margin-left: 0;
+}
+
+#checkout-summary li {
+    margin-bottom: 10px;  /*Add space between the listed products in the order summary */
+}
+
+#checkout-summary button {
+    background-color: #d4a5a5;    /*pay now button styling*/
+    color: #ffffff;
+    font-weight: bold;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+#checkout-summary button:hover {
+    background-color: #C7BE95;  /*change colour of the pay now button */
+}
+
+.checkout-form {
+    background-color: #ffffff; 
+    border: 1px solid #ccc;	/* border of the forms */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.checkout-form h4 {
+    color: #333333; /* colour of the form headings */
+}
+
+.checkout-form label {	/* styling of labels for input boxes and checkbox*/
+    color: #555555;	
+	font-weight: bold;
+}
+
+#payment-details input {
+	width: 20%;		/* sizing of payment details input boxes */
+}
+
+
+#address-details input,
+#billing-address input,
+#address-details textarea,
+#billing-address textarea {
+	width: 95%;	/* sizing of billing and regular address input boxes */
+    padding: 30px; 
+    margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+#payment-details,		
+#address-details,
+#billing-address {
+    padding: 30px; 
+    box-sizing: border-box;
+}
+
+#same-billing-address {
+	padding: 30px;
+}
+
+
+#same-billing-address label {  /*checkbox label styling */
+	font-weight: bold;
+	font-style: italic;	
+}
+
+input[type="checkbox"] {
+    transform: scale(2.5); /* make the checkbox larger */
+}
+

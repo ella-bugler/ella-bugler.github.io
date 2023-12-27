@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------------THIS HEADER WILL BE ON EVERY PAGE ----------------------------------------------------->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- LINK -->
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="sweetalert2.min.css">
+	<!-- LINK -->
+    <title>Checkout</title>
+</head>
+<body>
+<header>
+    <div class="logo-container">
+		<!-- LINK -->
+        <img class= "logo" src="logo.png" alt="Company Logo">
+		<!-- LINK -->
+    </div>
+	<p class= "company_name">Eternal Fragrances Co.</p>
+    <nav>
+        <ul>
+			<!-- LINKS -->
+            <li><a href="index.html">Home</a></li>
+			<li><a href="login.html">Login</a></li>
+            <li>
+				<a href="products.html">Products</a>
+				<ul>
+                    <li><a href="Holiday_Spice.html">Holiday Spice</a></li>
+                    <li><a href="Cotton_Cloud.html">Cotton Cloud</a></li>
+                    <li><a href="Forest_Fern.html">Forest Fern</a></li>
+                    <li><a href="Sweet_Vanilla.html">Sweet Vanilla</a></li>
+                </ul>
+			</li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+			<li id="basket"><a href="basket.html">&#128722;</a></li>
+			<!-- LINKS -->
+        </ul>
+	</nav>
+</header>
+	
+<h1> Free Shipping (with orders over €60)</h1>
+<!---------------------------------------------------------------------------------------------------------->
+<main>
+<section id="checkout-container">
+            <section id="checkout-summary">
+                <h3>Order Summary</h3>
+				<ul id="checkout-list"></ul>
+				<p><strong>Subtotal: </strong> <span id="subtotal-value"></span></p>
+				<button id="pay-now" type="submit">Pay Now</button>
+			</section>
+			
+			
+			
+			<form class="checkout-form" id="payment-details">
+				<h4>Payment Details</h4>
+					<label for="card-number">Card Number:</label>
+					<input type="text" id="card-number" name="card-number" required placeholder="1234 5678 9012 3456">
+
+					<label for="expiry-date">Expiry Date:</label>
+					<input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YYYY" required>
+
+					<label for="cvv">CVV:</label>
+					<input type="text" id="cvv" name="cvv" required placeholder="123">
+
+            </form>
+			
+			
+			
+			<form class="checkout-form" id="address-details">
+                <h4>Shipping Address</h4>
+					<label for="full-name">Full Name:</label>
+					<input type="text" id="full-name" name="full-name" required placeholder="John Doe">
+
+					<label for="address">Address:</label>
+					<textarea id="address" name="address" required placeholder="123 Street, Cityville"></textarea>
+
+					<label for="city">City:</label>
+					<input type="text" id="city" name="city" required placeholder="Cityville">
+
+					<label for="zip-code">ZIP Code:</label>
+					<input type="text" id="zip-code" name="zip-code" required placeholder="12345">
+					
+			</form>
+					<div id="same-billing-address">
+						<input type="checkbox" id="billing-same-as-shipping" name="billing-same-as-shipping">
+						<label id="billing-as-shipping" for="billing-same-as-shipping">Use Shipping address as Billing address.</label>
+					</div>
+				
+				
+				<form class="checkout-form" id="billing-address"> <!-- Add id="billing-address" to the billing address form -->
+					<h4>Billing Address</h4>
+					<label for="billing-full-name">Full Name:</label>
+					<input type="text" id="billing-full-name" name="billing-full-name" required placeholder="John Doe">
+
+					<label for="billing-address">Address:</label>
+					<textarea id="billing-address" name="billing-address" required placeholder="123 Street, Cityville"></textarea>
+
+					<label for="billing-city">City:</label>
+					<input type="text" id="billing-city" name="billing-city" required placeholder="Cityville">
+
+					<label for="billing-zip-code">ZIP Code:</label>
+					<input type="text" id="billing-zip-code" name="billing-zip-code" required placeholder="12345">
+				</form>
+
+	
+        </section>
+</main>
+<!---------------------------THIS FOOTER WILL BE ON EVERY PAGE ------------------------------------------------------->
+<footer>
+        <p>&copy; 2023 EternalFragrancesCo. All rights reserved.</p>
+</footer>
+<!------------------------------------------------------------------------------------------------------------------>
+
+<!----------------------------------------------- JAVASCRIPT LINK------------------------------------------------>
+<script defer src="script.js"></script>
+<script src="sweetalert2.all.min.js"></script>
+
+</body>
+</html>

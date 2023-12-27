@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<!-------------------THIS HEADER WILL BE ON EVERY PAGE ---------------------------->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- LINK -->
+	<link rel="stylesheet" href="styles.css">
+	<!-- LINK -->
+	
+    <title>Forest Fern</title>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+		<!-- LINK -->
+        <img class= "logo" src="logo.png" alt="Company Logo">
+		<!-- LINK -->
+    </div>
+	<p class= "company_name">Eternal Fragrances Co.</p>
+    <nav>
+        <ul>
+			<!-- LINKS -->
+            <li><a href="index.html">Home</a></li>
+			<li><a href="login.html">Login</a></li>
+            <li>
+				<a href="products.html">Products</a>
+				<ul>
+                    <li><a href="Holiday_Spice.html">Holiday Spice</a></li>
+                    <li><a href="Cotton_Cloud.html">Cotton Cloud</a></li>
+                    <li><a href="Forest_Fern.html">Forest Fern</a></li>
+                    <li><a href="Sweet_Vanilla.html">Sweet Vanilla</a></li>
+                </ul>
+			</li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+			<li id="basket"><a href="basket.html">&#128722;</a></li>
+			<!-- LINKS -->
+        </ul>
+	</nav>
+</header>
+
+<h1> Free Shipping (with orders over €60)</h1>
+
+
+<!----------------IMAGE OF CANDLE AND ADD TO BASKET OPTION ----------------->
+<h2>FOREST FERN CANDLE</h2>
+<section id="candle-name">
+		<div class="product_photo">
+			<!--LINK -->
+			<img class="product_image" src="forest_fern.png" alt="Forest Fern Candle Image">
+			<!--LINK -->
+		</div>
+		<div class="product_details">
+			<h3>FOREST FERN CANDLE - Pine and Cedarwood </h3>
+			<p> Price: €30.00</p>
+			<div class="add-to-basket">
+				<h3>Add to Basket : </h3>
+				<label for="quantity">Quantity:</label>
+				<input type="number" id="quantity" name="quantity" value="1" min="1">
+				<button onclick="addToBasketForestFern()">Add to Basket &#128722;</button>
+			</div>
+		</div>
+</section>
+
+<!----------------------DESCRIPTION OF CANDLE ------------------------->
+<section id="candle-description">
+        <p class= "main-description">Transform your home into a lush woodland with our Forest Fern Candle. This aroma combines the scent of fresh, crisp pine needles with warm cedarwood base notes. Perfect for creating a refreshing and earthy atmosphere in your home.</p>
+        <p class= "features">Key Features include:</p>
+        <ul>
+            <li>Fresh, woody blend of Pine and Cedarwood</li>
+            <li>Hand-poured with care.</li>
+            <li>48 hour burn time.</li>
+            <li>Ideal for Nature Lovers.</li>
+        </ul>
+        <p class= "final-sentence"> Order now and make every moment special!</p>
+</section>
+	
+<!---------------------------THIS FOOTER WILL BE ON EVERY PAGE --------------------------->
+<footer>
+        <p>&copy; 2023 EternalFragrancesCo. All rights reserved.</p>
+</footer>
+ <!------------------------THIS FOOTER WILL BE ON EVERY PAGE ------------------------------->
+
+<!----------------------------------------------- JAVASCRIPT LINK------------------------------------------------>
+ 
+ <script src="script.js"></script>
+<!-------------------------------------------------------------------------------------------------------------------->
+
+</body>
+</html>

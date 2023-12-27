@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<!-------------------THIS HEADER WILL BE ON EVERY PAGE ---------------------------->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- LINK -->
+	<link rel="stylesheet" href="styles.css">
+	<!-- LINK -->
+    <title>Cotton Cloud</title>
+	
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+		<!-- LINK -->
+        <img class= "logo" src="logo.png" alt="Company Logo">
+		<!-- LINK -->
+    </div>
+	<p class= "company_name">Eternal Fragrances Co.</p>
+    <nav>
+        <ul>
+			<!-- LINKS -->
+            <li><a href="index.html">Home</a></li>
+			<li><a href="login.html">Login</a></li>
+            <li>
+				<a href="products.html">Products</a>
+				<ul>
+                    <li><a href="Holiday_Spice.html">Holiday Spice</a></li>
+                    <li><a href="Cotton_Cloud.html">Cotton Cloud</a></li>
+                    <li><a href="Forest_Fern.html">Forest Fern</a></li>
+                    <li><a href="Sweet_Vanilla.html">Sweet Vanilla</a></li>
+                </ul>
+			</li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+			<li id="basket"><a href="basket.html">&#128722;</a></li>
+			<!-- LINKS -->
+        </ul>
+	</nav>
+</header>
+
+<h1> Free Shipping (with orders over €60)</h1>
+
+
+<!----------------IMAGE OF CANDLE AND ADD TO BASKET OPTION ----------------->
+<h2>COTTON CLOUD CANDLE</h2>
+<section id="candle-name">
+		<div class="product_photo">
+			<!--LINK -->
+			<img class="product_image" src="cotton_cloud.png" alt="Cotton Cloud Candle Image">
+			<!--LINK -->
+		</div>
+		<div class="product_details">
+			<h3>COTTON CLOUD CANDLE - Fresh Cotton </h3>
+			<p> Price: €30.00</p>
+			<div class="add-to-basket">
+				<h3>Add to Basket : </h3>
+				<label for="quantity">Quantity:</label>
+				<input type="number" id="quantity" name="quantity" value="1" min="1">
+				<button onclick="addToBasketCottonCloud()">Add to Basket &#128722;</button>
+			</div>
+		</div>
+</section>
+
+<!----------------------DESCRIPTION OF CANDLE ------------------------->
+<section id="candle-description">
+        <p class= "main-description">Create your own haven of tranquility with our Cotton Cloud Candle. This aroma perfectly captures the gentle notes of soft, fresh linen, with subtle notes of Spring blossoms. Great for creating a calm and relaxing atmosphere in your home.</p>
+        <p class= "features">Key Features include:</p>
+        <ul>
+            <li>Delicate blend of fresh cotton and light florals.</li>
+            <li>Hand-poured with care.</li>
+            <li>48 hour burn time.</li>
+            <li>Ideal for creating a serene atomsphere wherever you are.</li>
+        </ul>
+        <p class= "final-sentence"> Order now and make every moment special!</p>
+</section>
+	
+<!---------------------------THIS FOOTER WILL BE ON EVERY PAGE --------------------------->
+<footer>
+        <p>&copy; 2023 EternalFragrancesCo. All rights reserved.</p>
+</footer>
+<!------------------------THIS FOOTER WILL BE ON EVERY PAGE ------------------------------->
+
+<!----------------------------------------------- JAVASCRIPT LINK------------------------------------------------>
+ 
+ <script src="script.js"></script>
+<!-------------------------------------------------------------------------------------------------------------------->
+</body>
+
+</html>

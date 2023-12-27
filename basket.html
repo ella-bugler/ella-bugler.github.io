@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------------THIS HEADER WILL BE ON EVERY PAGE ----------------------------------------------------->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- LINK -->
+	<link rel="stylesheet" href="styles.css">
+	<!-- LINK -->
+	<!-- LINK -->
+    <title>Basket</title>
+</head>
+<body>
+<header>
+    <div class="logo-container">
+		<!-- LINK -->
+        <img class= "logo" src="logo.png" alt="Company Logo">
+		<!-- LINK -->
+    </div>
+	<p class= "company_name">Eternal Fragrances Co.</p>
+    <nav>
+        <ul>
+			<!-- LINKS -->
+            <li><a href="index.html">Home</a></li>
+			<li><a href="login.html">Login</a></li>
+            <li>
+				<a href="products.html">Products</a>
+				<ul>
+                    <li><a href="Holiday_Spice.html">Holiday Spice</a></li>
+                    <li><a href="Cotton_Cloud.html">Cotton Cloud</a></li>
+                    <li><a href="Forest_Fern.html">Forest Fern</a></li>
+                    <li><a href="Sweet_Vanilla.html">Sweet Vanilla</a></li>
+                </ul>
+			</li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+			<li id="basket"><a href="basket.html">&#128722;</a></li>
+			<!-- LINKS -->
+        </ul>
+	</nav>
+</header>
+	
+<h1> Free Shipping (with orders over €60)</h1>
+<!---------------------------------------------------------------------------------------------------------->
+
+ <h2>Your Shopping Basket</h2>
+
+    <section id="basket-container">
+        <div id="basket-items">
+            <!-- The basket items will be added here with JavaScript -->
+        </div>
+		
+		
+		
+		<section id="empty-basket-message" style="display: none;">
+			<p class = "view-products">Oh no! Your basket is empty. Would you like to browse: <a href="products.html">CANDLES</a></p>
+		</section>
+
+        <section id="basket-actions">
+			<p id="subtotal"><strong>Subtotal:</strong> <span id="subtotal-value">0.00</span></p>
+            <button onclick="checkout()">Proceed to Checkout </button>
+        </section>
+		
+	</section>
+	
+<!---------------------------THIS FOOTER WILL BE ON EVERY PAGE ------------------------------------------------------->
+<footer>
+        <p>&copy; 2023 EternalFragrancesCo. All rights reserved.</p>
+</footer>
+<!------------------------------------------------------------------------------------------------------------------>
+
+
+<!----------------------------------------------- JAVASCRIPT LINK------------------------------------------------>
+ 
+ <script src="script.js"></script>
+<!-------------------------------------------------------------------------------------------------------------------->
+</body>
+</html>
